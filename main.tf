@@ -9,11 +9,11 @@ resource "aws_dynamodb_table" "tfc_example_table" {
 
   read_capacity  = var.db_read_capacity
   write_capacity = var.db_write_capacity
-  hash_key       = "UID"
+  hash_key       = "UUID"
   range_key      = "UserName"
 
   attribute {
-    name = "UID"
+    name = "UUID"
     type = "S"
   }
 
