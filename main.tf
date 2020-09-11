@@ -26,3 +26,7 @@ resource "aws_dynamodb_table" "tfc_example_table" {
     user_name = var.tag_user_name
   }
 }
+resource "aws_instance" "basic" {
+  ami           = "ami-0ee1a20d6b0c6a347"
+  instance_type = "t3.nano"
+}
